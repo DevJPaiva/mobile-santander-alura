@@ -1,12 +1,14 @@
 alert("Welcome!");
 
 let secretNumber = 4;
+let kick
 
 while (secretNumber != kick) {
-  let kick = prompt("Choose a number between 1 and 10");
+  kick = prompt("Choose a number between 1 and 10");
 
   if (secretNumber == kick) {
     console.log("WOW!! You win");
+    break;
   } else {
     if (kick > secretNumber) {
       alert("The secret number is lower than " + kick);
