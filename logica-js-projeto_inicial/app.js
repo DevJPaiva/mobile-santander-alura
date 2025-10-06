@@ -19,3 +19,6 @@ while (secretNumber != kick) {
     kicksUser++;
   }
 }
+
+let wordKick = kicksUser > 1? "tentativas" : "tentativas";
+alert("Yes voce descobriu o numero secreto com " + secretNumber)
