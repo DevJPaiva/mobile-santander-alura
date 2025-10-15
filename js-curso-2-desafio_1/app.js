@@ -11,6 +11,9 @@ function exibirTextNaTela(tag,texto) {
     campo.innerHTML = texto;
 }
 
+exibirTextNaTela('h1','teste');
+exibirTextNaTela('p','teste2');
+
 function verificarChute() {
     console.log('o botão foi clicado')
 }
