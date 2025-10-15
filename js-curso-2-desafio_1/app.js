@@ -6,31 +6,36 @@ let paragrafo = document.querySelector('p');
 paragrafo.innerHTML = 'Escolha um número entre 1 e 10';
 */
 
-function exibirTextNaTela(tag,texto) {
-    let campo =  document.querySelector(tag);
-    campo.innerHTML = texto;
+function exibirTextNaTela(tag, texto) {
+  let campo = document.querySelector(tag);
+  campo.innerHTML = texto;
 }
 
-exibirTextNaTela('h1','teste');
-exibirTextNaTela('p','teste2');
+exibirTextNaTela("h1", "teste");
+exibirTextNaTela("p", "teste2");
 
 function verificarChute() {
-    console.log('o botão foi clicado')
+  console.log("o botão foi clicado");
 }
 
 function msgDeAlerta() {
-    alert('I love JS')
+  alert("I love JS");
 }
 
 function qualNomeDaCidade() {
-    let nomeDaCidade = prompt('Qual o nome da cidade que você visitou?');
-    alert('Estive em ' + nomeDaCidade + ' e lembrei de você.');
+  let nomeDaCidade = prompt("Qual o nome da cidade que você visitou?");
+  alert("Estive em " + nomeDaCidade + " e lembrei de você.");
 }
 
 function somandoDoisNumeros() {
-    let primeiroNumero = parseInt(prompt('Digite o primeiro número'));
-    let segundoNumero = parseInt(prompt('Digite o segundo número'));
-    let resultado = primeiroNumero + segundoNumero;
-    alert(`${primeiroNumero} + ${segundoNumero} = ${resultado}`)
+  let primeiroNumero = parseInt(prompt("Digite o primeiro número"));
+  let segundoNumero = parseInt(prompt("Digite o segundo número"));
+  let resultado = primeiroNumero + segundoNumero;
+  alert(`${primeiroNumero} + ${segundoNumero} = ${resultado}`);
 }
 
+let numeroSecreto = gerarNumeroAleatorio;
+
+function gerarNumeroAleatorio() {
+  return parseInt(Math.random() * 10 + 1);
+}
