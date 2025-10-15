@@ -1,10 +1,26 @@
 let titulo = document.querySelector('h1');
-titulo.innerHTML = 'Jogo do número secreto';
+titulo.innerHTML = 'Hora do desafio!';
 
 let paragrafo = document.querySelector('p');
 paragrafo.innerHTML = 'Escolha um número entre 1 e 10';
 
 function verificarChute() {
     console.log('o botão foi clicado')
+}
+
+function msgDeAlerta() {
+    alert('I love JS')
+}
+
+function qualNomeDaCidade() {
+    let nomeDaCidade = prompt('Qual o nome da cidade que você visitou?');
+    alert('Estive em ' + nomeDaCidade + ' e lembrei de você.');
+}
+
+function somandoDoisNumeros() {
+    let primeiroNumero = parseInt(prompt('Digite o primeiro número'));
+    let segundoNumero = parseInt(prompt('Digite o segundo número'));
+    let resultado = primeiroNumero + segundoNumero;
+    alert(`${primeiroNumero} + ${segundoNumero} = ${resultado}`)
 }
 
