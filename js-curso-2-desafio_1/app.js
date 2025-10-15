@@ -15,7 +15,8 @@ exibirTextNaTela("h1", "teste");
 exibirTextNaTela("p", "teste2");
 
 function verificarChute() {
-  console.log("o botão foi clicado");
+  let chute = document.querySelector("input").value;
+  console.log(chute == numeroSecreto);
 }
 
 function msgDeAlerta() {
@@ -34,7 +35,7 @@ function somandoDoisNumeros() {
   alert(`${primeiroNumero} + ${segundoNumero} = ${resultado}`);
 }
 
-let numeroSecreto = gerarNumeroAleatorio;
+let numeroSecreto = gerarNumeroAleatorio();
 
 function gerarNumeroAleatorio() {
   return parseInt(Math.random() * 10 + 1);
