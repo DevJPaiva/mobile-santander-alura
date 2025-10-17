@@ -40,3 +40,40 @@ function converteDolar(qtdDolar) {
 console.log(converteDolar(100.0));
 
 //Crie uma função que mostre na tela a área e o perímetro de uma sala retangular, utilizando altura e largura que serão dadas como parâmetro.
+
+function calcularMedidasDeComodo(altura, largura) {
+  let area = altura * largura;
+  let perimetro = 2 * (altura + largura);
+
+  console.log(`A área da sala é ${area}m²`);
+
+  console.log(`O perímetro da sala é ${perimetro}m`);
+}
+
+calcularMedidasDeComodo(5, 3);
+
+//Crie uma função que mostre na tela a área e o perímetro de uma sala circular, utilizando seu raio que será fornecido como parâmetro. Considere Pi = 3,14.
+
+function calcularSalaCircular(raio) {
+  const PI = 3.14;
+
+  let perimetro = 2 * PI * raio;
+
+  let area = PI * (raio * raio);
+
+  console.log(`A área do círculo é ${area.toFixed(2)}m²`);
+  console.log(`O perímetro do círculo é ${perimetro.toFixed(2)}m`);
+}
+
+//calcularSalaCircular(5);
+
+//Crie uma função que mostre na tela a tabuada de um número dado como parâmetro.
+function tabuada(numero) {
+  for (let i = 1; i <= 10; i++) {
+    // Calcule o resultado
+    let resultado = numero * i;
+    console.log(`${numero} x ${i} = ${resultado}`);
+  }
+}
+
+//tabuada(2);
